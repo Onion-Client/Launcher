@@ -11,13 +11,11 @@ import java.awt.*;
 
 public class Main
 {
+    public static final int WIDTH = 720;
+    public static final int HEIGHT = 640;
+
     public static void main(String[] args)
     {
-        JFrame frame = new JFrame("Onion Launcher");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
-        frame.setSize(720,640);
-        frame.setVisible(true);
-        frame.getContentPane().setBackground(Color.DARK_GRAY);
+        LauncherFrame frame = new LauncherFrame(WIDTH, HEIGHT);
     }
 }
