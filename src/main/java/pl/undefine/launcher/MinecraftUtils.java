@@ -20,8 +20,8 @@ import java.util.Objects;
 
 public class MinecraftUtils
 {
-    File root = new File(System.getenv("APPDATA"), ".onionclient");
-    File libraries = new File(root, "libraries");
+    public static File root = new File(System.getenv("APPDATA"), ".onionclient");
+    public static File libraries = new File(root, "libraries");
 
     public static void EnsureRootIntegrity()
     {

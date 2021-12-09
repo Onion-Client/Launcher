@@ -6,21 +6,10 @@
 
 package pl.undefine.launcher;
 
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
-import java.util.Iterator;
-import java.util.Objects;
 
 public class LauncherFrame extends JFrame implements ActionListener
 {
@@ -46,8 +35,8 @@ public class LauncherFrame extends JFrame implements ActionListener
         getContentPane().setBackground(Color.DARK_GRAY);
 
         titleLabel = new JLabel("Onion Launcher");
-        titleLabel.setVerticalAlignment((int) JLabel.CENTER_ALIGNMENT);
-        titleLabel.setHorizontalAlignment((int) JLabel.CENTER_ALIGNMENT);
+        titleLabel.setVerticalAlignment(SwingConstants.CENTER);
+        titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
         titleLabel.setFont(new Font("Calibri", Font.PLAIN, 75));
         titleLabel.setForeground(Color.WHITE);
         titleLabel.setBounds(0, 0, width, 200);
