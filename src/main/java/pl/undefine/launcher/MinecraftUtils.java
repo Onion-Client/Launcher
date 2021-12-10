@@ -180,7 +180,7 @@ public class MinecraftUtils
                     "  --gameDir " + root +
                     "  --assetsDir " + assets +
                     "  --assetIndex 1.8" +
-                    "  --uuid 4f68097a75b74b62800ec3bc37a9dbb7" +
+                    "  --uuid b8e2cbd659f711ecbf630242ac130002" +
                     "  --accessToken 123456789" +
                     "  --userProperties \"{\\\"preferredLanguage\\\" : [\\\"pl-pl\\\"],\\\"registrationCountry\\\" : [\\\"PL\\\"]}\"" +
                     "  --userType mojang");
