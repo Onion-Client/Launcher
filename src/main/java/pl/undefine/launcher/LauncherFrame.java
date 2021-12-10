@@ -10,11 +10,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.nio.file.Paths;
 
 public class LauncherFrame extends JFrame implements ActionListener
 {
     JButton playButton;
     JLabel titleLabel;
+    JTextField usernameInput;
 
     int width;
     int height;
@@ -42,6 +45,11 @@ public class LauncherFrame extends JFrame implements ActionListener
         titleLabel.setBounds(0, 0, width, 200);
         add(titleLabel);
 
+        usernameInput = new JTextField();
+        usernameInput.setBounds(width / 4, height / 4 * 2 - 20, width / 2, 20);
+        usernameInput.addActionListener(this);
+        add(usernameInput);
+
         playButton = new JButton("Play");
         playButton.setBounds(width / 4, height / 4 * 3 - 100, width / 2, 100);
         playButton.addActionListener(this);
@@ -55,6 +63,7 @@ public class LauncherFrame extends JFrame implements ActionListener
         {
             System.out.println("Launching minecraft...");
             MinecraftUtils.EnsureRootIntegrity();
+            MinecraftUtils.LaunchMinecraft(usernameInput.getText());
         }
     }
 }
