@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021, Undefine <cqundefine@gmail.com>
+ * Copyright (c) 2021-2022, Undefine <cqundefine@gmail.com>
  *
  * SPDX-License-Identifier: BSD-2-Clause
  */
